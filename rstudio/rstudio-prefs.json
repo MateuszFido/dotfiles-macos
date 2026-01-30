@@ -1,7 +1,7 @@
 {
     "initial_working_directory": "~",
-    "posix_terminal_shell": "bash",
-    "editor_theme": "a11y-dark {rsthemes}",
+    "posix_terminal_shell": "zsh",
+    "editor_theme": "Material Palenight {rsthemes}",
     "jobs_tab_visibility": "shown",
     "panes": {
         "quadrants": [
@@ -14,20 +14,21 @@
             "History",
             "Connections",
             "Build",
-            "VCS",
             "Tutorial",
             "Presentation"
         ],
         "tabSet2": [
             "Environment",
+            "Files",
             "Plots",
             "Packages",
             "Help",
             "Viewer",
-            "Presentations",
-            "Files"
+            "Presentations"
         ],
-        "hiddenTabSet": [],
+        "hiddenTabSet": [
+            "VCS"
+        ],
         "console_left_on_top": false,
         "console_right_on_top": true,
         "additional_source_columns": 0
@@ -56,5 +57,6 @@
     "show_diagnostics_other": true,
     "background_diagnostics_delay_ms": 500,
     "code_formatter": "styler",
-    "text_rendering": "geometricPrecision"
+    "text_rendering": "geometricPrecision",
+    "editor_keybindings": "vim"
 }
