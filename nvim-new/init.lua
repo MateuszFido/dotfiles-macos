@@ -1,2 +1,1 @@
-require('config.lazy')
-require('configs')
+require("config.lazy")
