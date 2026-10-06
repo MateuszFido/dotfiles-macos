@@ -1,0 +1,50 @@
+# action to take after session completion
+# options: "ask" | "start" | "quit"
+onSessionEnd: "start"
+
+asciiArt:
+  # use ASCII art for timer display
+  enabled: true
+
+  # available fonts: "mono12" | "rebel" | "ansi" | "ansiShadow"
+  # default: mono12
+  font: ansiShadow
+
+  # color of the ASCII art timer
+  # hex color or "none"
+  color: "#5A56E0"
+
+work:
+  duration: 25m
+  title: work session
+
+  # cross-platform notifications
+  notification:
+    enabled: true
+    urgent: true # persistent notification with alert sound (platform-dependent)
+    title: work finished 🎉
+    message: time to take a break
+    # icon: ~/my/icon.png
+
+break:
+  duration: 5m
+  title: break session
+  notification:
+    enabled: true
+    urgent: false 
+    title: break over 😴
+    message: back to work!
+
+  # will run after the session ends
+  then:
+    - [spd-say, "Back to work!"]
+
+longBreak:
+  # enable long break after a certain number of work sessions
+  enabled: true
+
+  # number of work sessions before long break
+  after: 3
+
+  # long break duration
+  duration: 15m

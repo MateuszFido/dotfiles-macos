@@ -1,3 +1,8 @@
+.DS_Store
+.serena
 *tmux_resurrect*
 github-copilot
 gpt4all.io
+git
+zed/prompts/
+uv/
