@@ -53,10 +53,14 @@ return {
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
-    opts = { source_selector = { sources = {
-      { source = "filesystem", display_name = "File" },
-      { source = "buffers", display_name = "Bufs" },
-      { source = "git_status", display_name = "Git" },
-    } } },
+    opts = {
+      source_selector = { sources = {
+        { source = "filesystem", display_name = "File" },
+        { source = "buffers", display_name = "Bufs" },
+        { source = "git_status", display_name = "Git" },
+      } },
+      -- Show dotfiles and gitignored files; Neo-tree dims the gitignored ones.
+      filesystem = { filtered_items = { hide_dotfiles = false, hide_gitignored = false, never_show = { ".git" } } },
+    },
   },
 }

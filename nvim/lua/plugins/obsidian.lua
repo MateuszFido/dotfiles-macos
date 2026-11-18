@@ -4,14 +4,14 @@ return {
 		version = "*",
 		ft = "markdown",
 		cmd = "Obsidian",
-		dependencies = { "folke/snacks.nvim" },
+		dependencies = { "nvim-telescope/telescope.nvim" },
 		opts = function()
 			return {
 				legacy_commands = false,
 				workspaces = {
 					{ name = "vault", path = vim.env.OBSIDIAN_VAULT or vim.fn.expand("~/Nextcloud/vault") },
 				},
-				picker = { name = "snacks.picker" },
+				picker = { name = "telescope.nvim" },
 				note_id_func = require("obsidian.builtin").title_id,
 				-- render-markdown.nvim already handles the note display.
 				ui = { enable = false },

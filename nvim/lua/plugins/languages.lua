@@ -2,7 +2,7 @@ return {
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = { ensure_installed = {
-      "lua-language-server", "r-languageserver", "svelte-language-server", "vtsls", "json-lsp", "taplo", "stylua",
+      "lua-language-server", "r-languageserver", "svelte-language-server", "vtsls", "json-lsp", "taplo", "stylua", "nil",
       { "rust-analyzer", condition = function() return vim.fn.executable "rust-analyzer" == 0 end },
     } },
   },

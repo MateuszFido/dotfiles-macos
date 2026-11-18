@@ -63,7 +63,7 @@ return {
       bufhidden = "hide",
       force_close = false,
       vim_ui_input = false,
-      references = { provider = "snacks" },
+      references = { provider = "telescope" },
       post_open_hook = function(buf, win)
         bind_popup_quit(win)
         -- The plugin reuses the window but does not refresh its filename title.
