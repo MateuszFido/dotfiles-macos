@@ -1,0 +1,14 @@
+#!/bin/bash
+# JankyBorders: thin accent border on the focused window, colored by Pywal16.
+color4='#cba6f7'
+[ -f "$HOME/.cache/wal/colors.sh" ] && . "$HOME/.cache/wal/colors.sh"
+
+options=(
+	style=round
+	width=2.0
+	hidpi=on
+	active_color="0xff${color4#\#}"
+	inactive_color=0x00000000
+)
+
+/opt/homebrew/bin/borders "${options[@]}"

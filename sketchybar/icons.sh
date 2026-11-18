@@ -1,0 +1,16 @@
+# Nerd Font glyphs (JetBrainsMono Nerd Font). Codepoints in comments.
+ICON_APPLE='' # U+F179
+ICON_CPU='' # U+F4BC
+ICON_CLOCK='' # U+F017
+ICON_VOL_HIGH='󰕾' # U+F057E
+ICON_VOL_MED='󰖀' # U+F0580
+ICON_VOL_LOW='󰕿' # U+F057F
+ICON_VOL_MUTE='󰖁' # U+F0581
+ICON_WIFI='󰖩' # U+F05A9
+ICON_WIFI_OFF='󰖪' # U+F05AA
+ICON_BAT_100='' # U+F240
+ICON_BAT_75='' # U+F241
+ICON_BAT_50='' # U+F242
+ICON_BAT_25='' # U+F243
+ICON_BAT_0='' # U+F244
+ICON_BAT_CHARGING='󰂄' # U+F0084

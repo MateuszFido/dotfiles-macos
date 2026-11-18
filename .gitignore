@@ -1,3 +1,4 @@
+biohack-gateway
 .DS_Store
 .serena
 *tmux_resurrect*
@@ -6,3 +7,6 @@ gpt4all.io
 git
 zed/prompts/
 uv/
+rclone
+sketchybar/helpers/menubar
+karabiner/automatic_backups/
